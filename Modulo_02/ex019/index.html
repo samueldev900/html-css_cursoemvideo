@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontos em CSS</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif; /*em fonte family ele pede 3 tipos de font para caso o dispositivo não possua uma ele use a outra e a ultima que nesse caso é serif é apenas o tipo da font (fonte generica)*/
+
+            
+            font-size: 2em; /* 16px = 1em = 16pt(pt é para textos impressos em papel) esses são os tamanhos padrão do navegador*/
+
+            /*Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            
+            
+            - Porém as medidas recomendadas são: (px e em) */
+
+
+
+            /*
+            
+            font-weight: bolder; define o peso da fonte e é usada para deixar a letra fina ou em negrito
+
+            font-style: italic;  define o style da fonte 
+            text-decoration: underline; sublinha a fonte 
+            font-size: 3em;
+            
+            
+            shorthand font
+            font-style -> font- weight -> font-size -> font-family  - ordem do shorthand 
+
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif; /* shorthand font */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sint asperiores fugiat odit quasi ut eaque voluptatibus voluptatum, saepe ad ducimus qui suscipit? Illo dolores tempore, pariatur rerum eum eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum dignissimos porro cum, adipisci ex deserunt, suscipit illo id nisi explicabo quos omnis voluptates animi dolor impedit debitis corporis laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium doloremque est consequatur officia obcaecati soluta ratione, accusamus ipsam corporis necessitatibus rem facere consectetur dignissimos? Repellat facilis architecto eligendi! Ipsa, molestias?</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, eveniet architecto animi odio excepturi sapiente, expedita perferendis pariatur laborum repudiandae porro asperiores praesentium? Ipsa dolor qui voluptas voluptates veritatis. Necessitatibus.</p>
+    
+</body>
+</html>

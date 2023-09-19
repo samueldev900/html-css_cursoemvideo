@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,#F1D8C9,#F2C3A7);
+}
+
+main{
+
+    background-color: white;
+
+
+
+    border-radius: 10px; /*faz a borda ficar com pontas redondas*/
+
+
+
+    box-shadow: 5px/* valor que faz ir pro lado*/ 5px /*quandot vai pra baixo*/15px /*quanto vai espalhar*/  /*e ainda tem um quarto valor determinando a trasparencia*/; 
+
+
+
+    width: 600px; /* está manipulando a largura do main */
+
+
+    padding: 10px; /* deu um espaçamento na borda do main */
+
+
+    margin: auto; /* centraliza o main e se o auto se adapta a largura da janela do navegador */
+}
+
+h1{
+    color: #F39209;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(129, 77, 5); /*nesse cado ainda posso dterminar a cor da sombra, porém a cor padrão é preta.*/
+}
+
+h2{
+    color: #125189;
+
+}
+p{
+    text-align: justify;
+}

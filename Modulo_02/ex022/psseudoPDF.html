@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando um link </title>
+    <style>
+
+        /* 
+        
+        #   = id
+        .   = class
+        :   = psseudo-class
+        ::  = pseudo-element
+        >   = children
+        
+        */
+
+        body{
+            font: normal 1em Arial,Helvetica, sans-serif;
+        }
+
+        a{
+            font-weight: bold;
+            text-decoration: none ; /* Esconde o sublinhado do link*/
+            color: red;
+        }
+
+        a:visited {
+            color: darkred; /*deixa o link já clicado/visitado na cor red escuro*/
+        }
+
+        a:hover{ /* Exibi tudo oque estiver dentro da função quando passar o mouse em cima*/
+            text-decoration: underline;
+        }
+
+        .especial:hover{
+
+            color: white;
+            background-color: black;
+            text-decoration: none;
+
+        }
+        .especial::before{
+            content: '>>';
+            font-weight: lighter;
+            
+        }
+
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando um Link </h1>
+
+
+    <p>Para aprender HTML e CSS3, acesse o 
+    <a href="https://github.com/samueldev900">
+        Meu GitHUB do Samuel
+    </a>
+    </p>
+
+    <p>Se quiser saber mais sobre os padrões, visite o site do <a href="https://www.w3c.br/">
+        Escritório do W3C no Brasil
+    </a>
+    </p>
+
+    <p>Para acompanhar Cursos, acesse o
+        <a href="https://www.youtube.com/@CursoemVideo" class="especial">
+            canal do Curso em video
+        </a>
+    </p>
+    
+</body>
+</html> 

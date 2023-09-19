@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.562);
+
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5); /*Sombras*/
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.342);
+            
+        }
+
+        article{
+            background-color: lightslategray;
+            padding: 5px;
+
+        }
+
+        article > aside{ /* asside Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo
+ou seção*/
+
+            background-color:  rgb(165, 165, 165);
+
+        }
+
+        footer{ /* foter cria um rodapé para p site inteiro, seção oyu artigo*/
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        .bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link numero 1</a>
+            <a href="#">Link numero 1</a>
+            <a href="#">Link numero 1</a>
+            <a href="#">Link numero 1</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section id="Assuntos">
+
+        </section>
+
+        <section id="noticias">
+            <article>
+
+                <h2>Notticias sobre o brasil</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptate exercitationem assumenda voluptatum officia impedit, sequi, quia voluptatibus illo quos, animi dignissimos provident amet nam ut laborum quas eaque! Dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quod facilis odit ut at ipsa quas est sit. Blanditiis porro quasi harum omnis voluptatem nulla totam non mollitia sint voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur, soluta magnam nulla veniam, earum sint, nostrum fuga ipsa aliquid eius? Provident assumenda eius perferendis commodi harum voluptates, suscipit ut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis beatae quaerat, inventore voluptatem laboriosam iste consequuntur ipsum expedita eaque. Totam quaerat expedita ipsa fuga commodi sed tempore facere, veritatis at.</p>
+
+                <aside> <!--Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo
+                    ou seção-->
+                    <p>Artigo escrito por José da Silva</p>
+
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div class="bola">
+
+    </div>
+    
+</body>
+</html>

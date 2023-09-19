@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+/*Tudo oque for em HTTML "id" em CSS é "#"
+    Tudo oque é "class" em HTML em CSS é "."
+
+    ID apenas um componente
+    Class serve pra vários componentes
+
+*/
+
+body{
+    background-color: #faf0b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #2d8b38;
+}
+
+h2{
+
+    color: #0eb121;
+}
+
+h1#principal{
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+
+.intermediario{
+
+    color: #b1a60e;
+}
+
+.avançado{
+    color: #b10e0e;
+    font-weight: bold;
+}

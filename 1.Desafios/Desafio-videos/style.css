@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ajuste isso conforme necessário */
+  }
+
+ p{
+    text-align: center;
+ }
+  
+a{
+    align-items: center;
+}
+
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajuste isso conforme necessário */
+  }
+  
+  h1{
+    text-align: center;
+    color: white;
+  }
+  body{
+
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
