@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(imagens/espaco.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
+    div#fora{
+
+        height: 97vh;
+        position: relative;
+
+    }
+
+    div#dentro{
+        background-image: url(imagens/astronauta.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+<body>
+
+    
+        <div id="fora">
+            <div id="dentro">
+            </div>
+        </div>
+   
+    
+</body>
+</html>
