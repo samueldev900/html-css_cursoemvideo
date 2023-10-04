@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Fromulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="">--- Estado ---</option>
+                <optgroup label="Rigiões Suldeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Rigiões Nordeste">
+                    <option value="Pi">Piauí</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lisprof">
+        </p>
+
+        <p>
+            <datalist id="lisprof">
+                <option>Administração</option>
+                <option value="PROF">Professor</option>
+                <option> Desenvolvedor Senior</option>
+            </datalist>
+        </p>
+
+        <p><label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" name="limpar" id="ilimpar" value="Limpar">
+    </form>
+
+
+
+    
+</body>
+</html>

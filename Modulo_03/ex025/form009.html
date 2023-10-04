@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Treinando OutPut</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+
+
+        <p> <label for="inum1">Número 1: </label>
+            <input type="number" name="num1" id="inum1" size="30" min="1" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Número 2:</label>
+            <input type="number" name="num2" id="inum2" min="1" max="50" required
+            oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        
+        <p>
+            Resultado:
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="reset" name="limpar" id="limpar" value="Limpar">
+            <input type="submit" name="enviar" id="ienviar" value="Enviar">
+        </p>
+
+
+        <p><label for="inota"> Avalie: </label>
+            <input type="range" name="nota" id="inota" min="1" max="10" value="5" 
+            oninput="ival.innerHTML = Number(inota.value)">
+            <output name="val" id="ival">0</output>
+        </p>
+
+
+        <p>
+            <label for="iano">Informe o ano de nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="anoAtual()" required>
+        </p>
+        <p><label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade">0</output>
+        </p>
+
+
+    </form>
+
+    <script>
+        function anoAtual(){
+            var atual = new Date().getFullYear();
+            iidade.innerHTML = Number(atual) - Number(iano.value);
+        }
+    </script>
+    
+
+
+
+</body>
+</html>  
