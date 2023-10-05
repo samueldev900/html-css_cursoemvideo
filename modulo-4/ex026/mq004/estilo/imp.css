@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+
+@media Print {
+    
+
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+
+    }
+
+    main::after{
+        content: 'Esse site for desenvilvido por www.cursoemvideo.com';
+    }
+
+
+
+    img#phone   { display: none;}
+    img#imp     { display: block; }
+    img#tablet  { display: none; }
+    img#tv      { display: none; }
+    img#pc      { display: none; }
+
+    
+}
