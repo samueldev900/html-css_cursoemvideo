@@ -28,13 +28,18 @@ menu{
     
 }
 
+#itenhs{
+
+    transition: '3s';
+
+}
+
 
 menu > ul{
 
  list-style-type: none;
 
 }
-
 
 menu > ul > li > a{
     
